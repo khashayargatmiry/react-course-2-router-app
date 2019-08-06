@@ -12,11 +12,6 @@ import getVisibleExpenses from './selectors/expenses'
 import {Provider} from 'react-redux'
 
 const store = configureStore()
-console.log('store is ', store.getState())
-
-store.dispatch(addExpense({description: 'Water bill', amount: 5500}))
-store.dispatch(addExpense({description: 'Gas bill', createdAt: 1000}))
-store.dispatch(addExpense({description: 'Rent', amount: 109500}))
 
 
 /* setTimeout(() => {
